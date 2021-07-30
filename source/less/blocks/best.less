@@ -1,0 +1,147 @@
+.best {
+  margin-bottom: 60px;
+}
+
+.best__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.best__title {
+  margin-bottom: 41px;
+}
+
+.best__control {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+
+  list-style: none;
+
+  -ms-overflow-style: none;  /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.best__switch {
+  margin-right: 61px;
+  flex: 0 0 auto;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.best__button {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  white-space: nowrap;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+
+  transition: all 0.2s ease;
+  outline: none;
+  cursor: pointer;
+
+  &--active {
+    color: #2d9cdb;
+
+    border-color: #2d9cdb;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #2d9cdb;
+  }
+
+  &:active {
+    color: #2d9cdb;
+  }
+}
+
+.best__content {
+  overflow: hidden;
+
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+  max-width: 1610px;
+}
+
+.best__list {
+  display: none;
+  width: 100%;
+
+  &--active {
+    display: block;
+  }
+}
+
+.best__card {
+  padding: 30px;
+}
+
+.best--showcase .best__list--active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.best--showcase .best__item {
+  width: 33%;
+}
+
+@media (max-width: 1550px) {
+  .best__button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .best--showcase .best__item {
+    width: 49%;
+  }
+}
+
+@media (max-width: 768px) {
+  .best__title {
+    margin-bottom: 20px;
+  }
+
+  .best__switch {
+    margin-right: 21px;
+  }
+
+  .best__content {
+    padding: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .best {
+    margin-bottom: 20px;
+  }
+
+  .best__control {
+    justify-content: space-between
+  }
+
+  .best__switch {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .best--showcase .best__item {
+    width: 100%;
+  }
+}

@@ -1,0 +1,103 @@
+.button__container {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+
+    width: 135px;
+    height: 44px;
+    margin-left: -67px;
+
+    background: rgba(45, 156, 219, 0.65);
+    filter: blur(40px);
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.button {
+  display: block;
+  padding: 25px 73px;
+
+  font-weight: 700;
+  text-align: center;
+
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  // размер шрифта
+  &--big {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  &--small {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  // цвет
+  &--blue {
+    position: relative;
+    z-index: 2;
+
+    color: #ffffff;
+
+    background-color: #2d9cdb;
+  }
+
+  &--white {
+    color: #2d9cdb;
+
+    border: 3px solid #2d9cdb;
+
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:focus {
+      background-color: #2d9cdb;
+      color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 1550px) {
+  .button {
+    padding: 15px 40px;
+
+    border-radius: 8px;
+
+    // размер шрифта
+    &--big {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .button {
+    padding: 15px 46px;
+
+    &--big {
+      font-size: 16px;
+    }
+  }
+}

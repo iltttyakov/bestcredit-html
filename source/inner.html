@@ -1,0 +1,382 @@
+  <!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>BestCredit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+  <header class="header header--inner">
+    <div class="header__container container">
+      <a class="header___logo logo">
+        <img class="logo__img" src="img/Logo.svg" width="224" height="44" alt="Логотип BestCredit">
+      </a>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link">Кредиты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link">Карты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link">Займы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link">Ипотека</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link">Рефинансирование</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__burger burger">
+        <span class="visually-hidden">открыть меню</span>
+      </button>
+    </div>
+  </header>
+  
+  <section class="inner container">
+     
+      <h1 class="inner__title title">
+          Предложения, соответвующие вашему запросу
+      </h1>
+      
+      <div class="inner__best inner__container">
+          <div class="inner__header-row">
+             <p class="inner__header">
+                  Лучшее предложение
+              </p>
+          </div>
+          <div class="offer offer--best">
+            <div class="offer__bank offer__cell">
+              <img class="offer__logo" src="img/card_logo2.png">
+              <p class="offer__license">Лиц. № 129</p>
+            </div>
+            <div class="offer__cell">
+              <p class="offer__value">
+                  100 000₽
+                  <span class="tooltip" title="Контент в окне при наведении"></span>
+              </p>
+              <p class="offer__mark">
+                  Под залог недвижимости
+              </p>
+            </div>
+            <div class="offer__cell">
+              <p class="offer__value">
+                  от 3 654₽
+                  <span class="tooltip" title="Контент в окне при наведении"></span>
+              </p>
+              <p class="offer__mark">
+                  Ежемесячный платеж
+              </p>
+            </div>
+            <div class="offer__cell">
+              <p class="offer__value">
+                  12 мес.
+                  <span class="tooltip" title="Контент в окне при наведении"></span>
+              </p>
+              <p class="offer__mark">
+                  Срок кредитования
+              </p>
+            </div>
+            <div class="offer__cell">
+              <p class="offer__value">
+                  от 20 400₽
+                  <span class="tooltip" title="Контент в окне при наведении"></span>
+              </p>
+              <p class="offer__mark">
+                  Сумма переплаты
+              </p>
+            </div>
+            <div class="offer__cell">
+              <a class="offer__button button button--blue">Отправить заявку</a>
+            </div>
+          </div>
+          <div class="best-tabel">
+              <h2 class="best-tabel__title title">Подробная информация</h2>
+              <div class="best-tabel__content">
+                  <div class="best-tabel__row">
+                      <p class="best-tabel__mark">
+                        Ставка в %
+                      </p>
+                      <p class="best-tabel__value">
+                          от 9.9% годовых
+                      </p>
+                  </div>
+                  <div class="best-tabel__row">
+                      <p class="best-tabel__mark">
+                        Сумма кредита
+                      </p>
+                      <p class="best-tabel__value">
+                        до 5 000 000₽
+                      </p>
+                  </div>
+                  <div class="best-tabel__row">
+                      <p class="best-tabel__mark">
+                        Цель кредита
+                      </p>
+                      <p class="best-tabel__value">
+                        любая
+                      </p>
+                  </div>
+                  <div class="best-tabel__row">
+                      <p class="best-tabel__mark">
+                        Срок
+                      </p>
+                      <p class="best-tabel__value">
+                        до 60 месяцев
+                      </p>
+                  </div>
+                  <div class="best-tabel__row">
+                      <p class="best-tabel__mark">
+                        Возраст заемщика
+                      </p>
+                      <p class="best-tabel__value">
+                        от 23 до 60 лет
+                      </p>
+                  </div>
+                  <div class="best-tabel__row">
+                      <p class="best-tabel__mark">
+                        Стаж
+                      </p>
+                      <p class="best-tabel__value">
+                        не менее 3-х месяцев на последнем месте работы
+                      </p>
+                  </div>
+                  <div class="best-tabel__row">
+                      <p class="best-tabel__mark">
+                        Документы
+                      </p>
+                      <p class="best-tabel__value">
+                        паспорт и один из документов на выбор
+                      </p>
+                  </div>
+                  <div class="best-tabel__row">
+                      <p class="best-tabel__mark">
+                        Регистрация
+                      </p>
+                      <p class="best-tabel__value">
+                        В регионе предоставления кредита
+                      </p>
+                  </div>
+              </div>
+              <a class="best-tabel__button button button--blue">
+                  Отправить заявку
+              </a>
+          </div>
+      </div>
+      
+      <div class="inner__container">
+          <div class="inner__header-row offer offer--header">
+             <div class="offer__cell"></div>
+             <div class="offer__cell">
+                <p class="inner__header">
+                  Сумма
+                </p>
+             </div>
+             <div class="offer__cell">
+                <p class="inner__header">
+                  Ежемесячный платеж
+                </p>
+             </div>
+             <div class="offer__cell">
+                <p class="inner__header">
+                  Срок
+                </p>
+             </div>
+             <div class="offer__cell">
+                <p class="inner__header">
+                  Переплата
+                </p>
+              </div>
+             <div class="offer__cell"></div>
+          </div>
+          <div class="offer">
+            <div class="offer__bank offer__cell">
+                <img class="offer__logo" src="img/slider_logo1.png">
+                <p class="offer__license">Лиц. № 217</p>
+            </div>
+            <div class="offer__cell">
+              <p class="offer__value">
+                  5 000 000 ₽
+                  <span class="tooltip" title="Контент в окне при наведении"></span>                    
+                  <span class="offer__label">макс. 5 000 000 ₽</span>
+              </p>
+              <p class="offer__mark">
+                  Сумма
+              </p>
+            </div>
+            <div class="offer__cell">
+              <p class="offer__value">
+                  от 5 091 667 ₽
+                  <span class="tooltip" title="Контент в окне при наведении"></span>                    
+                  <span class="offer__label">ставка от 22.00% годовых</span>
+              </p>
+              <p class="offer__mark">
+                  Ежемесячный платеж
+              </p>
+            </div>
+            <div class="offer__cell">
+              <p class="offer__value">
+                  1 мес.
+                  <span class="tooltip" title="Контент в окне при наведении"></span>
+                  <span class="offer__label">макс 60 мес.</span>
+              </p>
+              <p class="offer__mark">
+                  Срок кредитования
+              </p>
+            </div>
+            <div class="offer__cell">
+              <p class="offer__value">
+                  от 91 667 ₽
+                  <span class="tooltip" title="Контент в окне при наведении"></span>                    
+                  <span class="offer__label"></span>
+              </p>
+              <p class="offer__mark">
+                  Сумма переплаты
+              </p>
+            </div>
+            <div class="offer__cell">
+              <a href="https://www.google.com" target="_blank" class="offer__button button button--blue">Отправить заявку</a>
+            </div>
+      </div>
+      </div>
+      
+      <a class="banner" href="#">
+        <p class="banner__title">
+          Подбор кредита онлайн
+        </p>
+        <p class="banner__offer">
+          Заполните единую онлайн-заявку и узнайте, в каких банках у вас высокая вероятность получить кредит.
+        </p>
+        <p href="#" class="banner__button">
+          Подобрать кредит
+        </p>
+      </a>
+      
+      <div class="inner__container">
+        
+        <div class="offer">
+            <div class="offer__bank offer__cell">
+                <img class="offer__logo" src="img/slider_logo1.png">
+                <p class="offer__license">Лиц. № 217</p>
+            </div>
+            <div class="offer__cell">
+              <p class="offer__value">
+                  5 000 000 ₽                    
+                  <span class="offer__label">макс. 5 000 000 ₽</span>
+              </p>
+              <p class="offer__mark">
+                  Сумма
+              </p>
+            </div>
+            <div class="offer__cell">
+              <p class="offer__value">
+                  от 5 091 667 ₽                    
+                  <span class="offer__label">ставка от 22.00% годовых</span>
+              </p>
+              <p class="offer__mark">
+                  Ежемесячный платеж
+              </p>
+            </div>
+            <div class="offer__cell">
+              <p class="offer__value">
+                  1 мес.
+                  <span class="offer__label">макс 60 мес.</span>
+              </p>
+              <p class="offer__mark">
+                  Срок кредитования
+              </p>
+            </div>
+            <div class="offer__cell">
+              <p class="offer__value">
+                  от 91 667 ₽                    
+                  <span class="offer__label"></span>
+              </p>
+              <p class="offer__mark">
+                  Сумма переплаты
+              </p>
+            </div>
+            <div class="offer__cell">
+              <a href="https://www.google.com" target="_blank" class="offer__button button button--blue">Отправить заявку</a>
+            </div>
+        </div>
+
+      </div>
+      
+  </section>
+   
+   <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">О проекте</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Контакты</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Правила и условия</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Карта сайта</a>
+          </li>
+        </ul>
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Политика конфидициальности</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Согласие на обработку персональных данных</a>
+          </li>
+        </ul>
+        <div class="footer__right">
+          <p class="footer__address">
+            Наш адрес: 639544, г. Новосибирск, ул. Ленина, дом 2, 26 этаж
+          </p>
+          <p class="footer__warning">
+            Содержание сайта не является рекомендацией или офертой и носит информационно-справочный характер
+          </p>
+        </div>
+      </div>
+      <div class="footer__info">
+        <p class="footer__info-paragraph">
+          Последствия не выплаты кредитов - В случае невозвращения общей суммы кредита, кредитор вынуждено начислит штраф за просрочку кредита. Большинство кредиторов идут на уступки и дают дополнительные 3 рабочих дня для оплаты. Они предусмотрены специально для Вас на случай, к примеру, если банковский перевод занял больше времени, чем обычно, или Вы просто поздно отправили сумму. Однако, в случае неполучения от Вас какой-либо реакции в течение продолжительного времени, будет начислен штраф за просрочку срока погашения кредита размером в среднем 0,10% от первоначальной суммы кредита, данные о Вас могут быть переданы в реестр должников, а задолженность коллекторскому агентству для взыскания долга.
+          <br><br>
+          О всех приближающихся сроках платежа, кредитор своевременно информируем Вас по СМС и электронной рассылкой писем. Рекомендуем Вам вносить платеж в день получения данных напоминаний. Так, Вы сохраните репутацию добросовестного заемщика и сможете получить скидки при последующем обращении в организацию.
+        </p>
+        <p class="footer__info-paragraph">
+          Предложение не является оффертой. Конечные условия уточняйте при прямом общении с кредиторами. Процентная ставка по потребительским кредитам и кредитным картам - от 12,9 до 31% годовых. Например, если вы взяли кредит на сумму 100 000 рублей на 1 год, то после истечения срока кредита, вам необходимо будет выплатить: от 112 900 до 131 000 рублей. Расчёт сделан с учётом комиссии. Мы не выдаем кредиты на срок, менее 61 дня. Максимальный срок кредитования - 5 лет. credit-credit-credit.ru занимается консультационной деятельностью по подбору кредитных программ, не является кредитной организацией и самостоятельно не выдает кредиты.
+        </p>
+        <p class="footer__info-paragraph footer__info-copyright">
+          © 2005—2019 ООО «best credit»
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/tooltipster.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    $('.tooltip').tooltipster({
+      theme: 'tooltipster-shadow',
+      triggerOpen: {
+        click: true,
+        hover: true
+      },
+    });
+  </script>
+  </body>
+</html>

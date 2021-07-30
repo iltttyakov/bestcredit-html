@@ -1,0 +1,214 @@
+.offer {
+    padding-left: 15px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #ffffff;
+    
+    &--best {
+        border-radius: 10px;
+        background-color: #f1f5ff;
+    }
+    
+    &--header {
+        background-color: #2d9cdb;
+    }
+}
+
+.offer__cell {
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer__license {
+    margin: 0;
+    
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #d2d2d2;
+}
+
+.offer__logo {
+    height: 35px;
+    width: 115px;
+    object-fit: contain;
+}
+
+.offer__value {
+    margin: 0;
+    margin-bottom: 3px;
+    
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.offer__label {
+    display: block;
+    margin: 0;
+    
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.offer__mark {
+    display: none;
+    margin: 0;
+    
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.offer--best .offer__mark {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer--best .offer__label {
+    display: none;
+}
+
+.offer__button {
+    padding: 20px 16px;
+    width: 221px;
+    height: 62px;
+    
+    font-size: 12px;
+}
+
+@media (max-width: 1550px) {
+    .offer {
+        padding: 10px 5px 5px 5px;
+    }
+    
+    .offer__value {
+        font-size: 16px;
+        line-height: 20px;    
+    }
+    
+    .offer__label {     
+        font-size: 10px;
+        line-height: 14px;
+        font-weight: 600;
+        text-transform: lowercase;
+    }
+    
+    .offer__mark {
+        margin: 0;
+        
+        font-size: 10px;
+        line-height: 14px;
+        font-weight: 600;
+        text-transform: lowercase;
+    }
+    
+    .offer__button {
+        padding: 11px 16px;
+        width: 113px;
+        height: 45px;
+    }
+    
+    .offer__license {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 960px) {
+    .offer {
+        padding: 30px 10px;
+        margin-bottom: 30px;
+        box-shadow: 0 6px 56px rgba(0,0,0,.06);
+    }
+    
+    .offer--header {
+        display: none;
+    }
+    
+    .offer__cell {
+        padding: 0 8px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 20px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    .offer__mark {
+        display: block;
+        width: 55%;
+        margin: 0;
+        
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        
+        text-transform: none;
+        color: #2d9cdb;
+    }
+    
+    .offer__value {
+        width: 55%;
+        
+        white-space: nowrap;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+    }
+    
+    .offer__mark {
+        width: 45%;
+        margin-top: 4px;
+
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+        
+        text-transform: none;
+        color: #2d9cdb;
+    }
+    
+    .offer__bank {
+        padding-bottom: 25px;
+        flex-direction: column;
+        align-items: center;
+        
+        border-bottom: 2px solid #dfe1e1;
+    }
+    
+    .offer__button {
+        margin: 0 auto;
+        padding: 18px 16px;
+        
+        width: 174px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+

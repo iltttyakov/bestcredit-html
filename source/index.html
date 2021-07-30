@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>BestCredit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+  <header class="header">
+    <div class="header__container container">
+      <a class="header___logo logo">
+        <img class="logo__img" src="img/Logo.svg" width="224" height="44" alt="Логотип BestCredit">
+      </a>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link">Кредиты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link">Карты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link">Займы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link">Ипотека</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link">Рефинансирование</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__burger burger">
+        <span class="visually-hidden">открыть меню</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="usp">
+    <div class="usp__container container">
+      <h1 class="usp__header">Найдите для себя идеальный кредит</h1>
+      <p class="usp__offer">
+        Наш сервис бесплатно подберет для вас самые
+        выгодные кредитные предложения с высокой
+        вероятностью одобрения
+      </p>
+    </div>
+  </section>
+
+  <section class="calculator calculator--top">
+    <form class="calculator__form">
+
+      <div class="calculator__group">
+        <label class="calculator__label" for="credit-sum">Выберите сумму кредита</label>
+          <div class="calculator__value">
+              <input type="number" class="calculator_value_sum" id="calculator_value_sum" value="130000" max="5000000" min="5000" step="5000">
+              <label for="calculator_value_sum" class="calculator__mark">руб.</label>
+          </div>
+          <div class="calculator__range" type="range" id="credit-sum" name="credit-sum"></div>
+      </div>
+
+      <div class="calculator__group">
+        <label class="calculator__label" for="credit-time">На какой срок</label>
+          <div class="calculator__value">
+              <input type="number" class="calculator_value_time" id="calculator_value_time" value="12" max="60" min="1">
+              <label for="calculator_value_time" class="calculator__mark">мес.</label>
+          </div>
+          <div class="calculator__range" type="range" id="credit-time" name="credit-time"></div>
+      </div>
+
+      <p class="calculator__note">Годовая процентная ставка (APR) 360% - 720%</p>
+      <div class="calculator__button button__container">
+        <button class="button button--blue button--big">Подобрать</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="partners">
+    <h2 class="partners__title title">Наши партнеры:</h2>
+    <div class="partners__bg">
+      <div class="partners__container container">
+        <button class="partners__navigation partners__navigation--prev">
+          <svg class="partners__navigation-icon" width="19" height="34" aria-hidden="true" role="img">
+            <use xlink:href="#icon-arrow"></use>
+          </svg>
+        </button>
+        <div class="partners__slider">
+          <div class="partners__item">
+            <div class="partners__logo-container">
+              <img class="partners__logo" src="img/slider_logo1.png" alt="ТинькоффБанк">
+            </div>
+          </div>
+          <div class="partners__item">
+            <div class="partners__logo-container">
+              <img class="partners__logo" src="img/slider_logo2.png" alt="Газпромбанк">
+            </div>
+          </div>
+          <div class="partners__item">
+            <div class="partners__logo-container">
+              <img class="partners__logo" src="img/slider_logo3.png" alt="Ренессанс кредит">
+            </div>
+          </div>
+          <div class="partners__item">
+            <div class="partners__logo-container">
+              <img class="partners__logo" src="img/slider_logo4.png" alt="Восточный Банк">
+            </div>
+          </div>
+          <div class="partners__item">
+            <div class="partners__logo-container">
+              <img class="partners__logo" src="img/slider_logo5.png" alt="Альфа Банк">
+            </div>
+          </div>
+          <div class="partners__item">
+            <div class="partners__logo-container">
+              <img class="partners__logo" src="img/slider_logo6.png" alt="МТС Банк">
+            </div>
+          </div>
+          <div class="partners__item">
+            <div class="partners__logo-container">
+              <img class="partners__logo" src="img/slider_logo1.png" alt="Тинькофф Банк">
+            </div>
+          </div>
+          <div class="partners__item">
+            <div class="partners__logo-container">
+              <img class="partners__logo" src="img/slider_logo2.png" alt="Газпром банк">
+            </div>
+          </div>
+        </div>
+        <button class="partners__navigation partners__navigation--next">
+          <svg class="partners__navigation-icon" width="19" height="34" aria-hidden="true" role="img">
+            <use xlink:href="#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages container">
+    <ul class="advantages__list">
+      <li class="advantages__item">
+        <div class="advantages__round">
+          <img class="advantages__icon" src="img/money.svg" width="94" height="94" alt="Деньги">
+        </div>
+        <p class="advantages__name">Деньги до 5 000 000 рублей на срок до 7 лет</p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__round">
+          <img class="advantages__icon" src="img/like.svg" width="95" height="95" alt="Вероятность одобрения">
+        </div>
+        <p class="advantages__name">Вероятность одобрения 94%</p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__round">
+          <img class="advantages__icon" src="img/invoice.svg" width="95" height="95" alt="Кредитная история">
+        </div>
+        <p class="advantages__name">С любой кредитной историей</p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__round">
+          <img class="advantages__icon" src="img/package.svg" width="93" height="93" alt="Быстро и удобно">
+        </div>
+        <p class="advantages__name">Быстро, не выходя<br>из дома</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="example container">
+    <h2 class="title example__title">Пример подбора</h2>
+    <img class="example__img" src="img/Macbook.png" alt="Пример подбора" width="1139px" height="666px">
+  </section>
+
+  <section class="requirements">
+    <div class="container">
+      <h2 class="requirements__title title">Требования к заемщику:</h2>
+      <ul class="requirements__list">
+        <li class="requirements__item">Любая кредитная история;</li>
+        <li class="requirements__item"> Постоянная прописка в любом регионе РФ;</li>
+        <li class="requirements__item">Возраст от 18 до 75 лет;</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="container">
+      <ul class="info__list">
+        <li class="info__item">Вам поступят уже одобренные предложения</li>
+        <li class="info__item">Наши услуги бесплатны для вас</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="best">
+    <div class="container best__container">
+      <h2 class="title best__title">Лучшие предложения</h2>
+      <ul class="best__control">
+        <li class="best__switch">
+          <button class="best__button best__button--1 best__button--active" onclick="bestSwitch('#best__credit', '.best__button--1')">Кредиты</button>
+        </li>
+        <li class="best__switch">
+          <button class="best__button best__button--2" onclick="bestSwitch('#best__credit-card', '.best__button--2')">Кредитные карты</button>
+        </li>
+        <li class="best__switch">
+          <button class="best__button best__button--3" onclick="bestSwitch('#best__debit-card', '.best__button--3')">Дебетовые карты</button>
+        </li>
+        <li class="best__switch">
+          <button class="best__button best__button--4" onclick="bestSwitch('#best__mortgage', '.best__button--4')">Ипотека</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="best__content">
+      <div id="best__credit" class="best__list best__list--active">
+        <div class="best__item">
+          <div class="best__card">
+            <div class="card">
+              <div class="card__top">
+                <div class="card__name">
+                  <h3 class="card__bank">МКБ</h3>
+                  <p class="card__offer">“На любые цели”</p>
+                </div>
+                <img class="card__logo" src="img/card_logo1.png" alt="МКБ" width="120" height="90">
+              </div>
+              <div class="card__content">
+                <div class="card__info-item">
+                  <p class="card__mark">Ставка от</p>
+                  <p class="card__value">9.9%</p>
+                </div>
+                <div class="card__info-item">
+                  <p class="card__mark">Срок кредита</p>
+                  <p class="card__value">до 3 лет</p>
+                </div>
+                <div class="card__info-item card__info-item--big">
+                  <p class="card__mark">Сумма кредита</p>
+                  <p class="card__value">до 5 000 000 руб.</p>
+                </div>
+                <p class="card__feature">Особенность: на любые цели</p>
+                <a class="card__button button button--white" href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="best__item">
+          <div class="best__card">
+            <div class="card">
+            <div class="card__top">
+              <div class="card__name">
+                <h3 class="card__bank">Восточный банк</h3>
+                <p class="card__offer">“На любые цели”</p>
+              </div>
+              <img class="card__logo" src="img/card_logo2.png" alt="Восточный банк" width="120" height="90">
+            </div>
+            <div class="card__content">
+              <div class="card__info-item">
+                <p class="card__mark">Ставка от</p>
+                <p class="card__value">9.9%</p>
+              </div>
+              <div class="card__info-item">
+                <p class="card__mark">Срок кредита</p>
+                <p class="card__value">до 3 лет</p>
+              </div>
+              <div class="card__info-item card__info-item--big">
+                <p class="card__mark">Сумма кредита</p>
+                <p class="card__value">до 5 000 000 руб.</p>
+              </div>
+              <p class="card__feature">Особенность: денги за 1 день</p>
+              <a class="card__button button button--white" href="#">Подробнее</a>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="best__item">
+          <div class="best__card">
+            <div class="card">
+            <div class="card__top">
+              <div class="card__name">
+                <h3 class="card__bank">Совком Банк</h3>
+                <p class="card__offer">“На любые цели”</p>
+              </div>
+              <img class="card__logo" src="img/card_logo3.png" alt="Совком Банк" width="120" height="90">
+            </div>
+            <div class="card__content">
+              <div class="card__info-item">
+                <p class="card__mark">Ставка от</p>
+                <p class="card__value">9.9%</p>
+              </div>
+              <div class="card__info-item">
+                <p class="card__mark">Срок кредита</p>
+                <p class="card__value">до 3 лет</p>
+              </div>
+              <div class="card__info-item card__info-item--big">
+                <p class="card__mark">Сумма кредита</p>
+                <p class="card__value">до 5 000 000 руб.</p>
+              </div>
+              <p class="card__feature">Особенность: 0% по кредиту</p>
+              <a class="card__button button button--white" href="#">Подробнее</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div id="best__credit-card" class="best__list">
+        <div class="best__item">
+          <div class="best__card">
+            <div class="card">
+            <div class="card__top">
+              <div class="card__name">
+                <h3 class="card__bank">МКБ</h3>
+                <p class="card__offer">“На любые цели”</p>
+              </div>
+              <img class="card__logo" src="img/card_logo1.png" alt="МКБ" width="120" height="90">
+            </div>
+            <div class="card__content">
+              <div class="card__info-item">
+                <p class="card__mark">Ставка от</p>
+                <p class="card__value">9.9%</p>
+              </div>
+              <div class="card__info-item">
+                <p class="card__mark">Срок кредита</p>
+                <p class="card__value">до 3 лет</p>
+              </div>
+              <div class="card__info-item card__info-item--big">
+                <p class="card__mark">Сумма кредита</p>
+                <p class="card__value">до 5 000 000 руб.</p>
+              </div>
+              <p class="card__feature">Особенность: на любые цели</p>
+              <a class="card__button button button--white" href="#">Подробнее</a>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="best__item">
+          <div class="best__card">
+            <div class="card">
+            <div class="card__top">
+              <div class="card__name">
+                <h3 class="card__bank">Восточный банк</h3>
+                <p class="card__offer">“На любые цели”</p>
+              </div>
+              <img class="card__logo" src="img/card_logo2.png" alt="Восточный банк" width="120" height="90">
+            </div>
+            <div class="card__content">
+              <div class="card__info-item">
+                <p class="card__mark">Ставка от</p>
+                <p class="card__value">9.9%</p>
+              </div>
+              <div class="card__info-item">
+                <p class="card__mark">Срок кредита</p>
+                <p class="card__value">до 3 лет</p>
+              </div>
+              <div class="card__info-item card__info-item--big">
+                <p class="card__mark">Сумма кредита</p>
+                <p class="card__value">до 5 000 000 руб.</p>
+              </div>
+              <p class="card__feature">Особенность: денги за 1 день</p>
+              <a class="card__button button button--white" href="#">Подробнее</a>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="best__item">
+          <div class="best__card">
+            <div class="card">
+            <div class="card__top">
+              <div class="card__name">
+                <h3 class="card__bank">Совком Банк</h3>
+                <p class="card__offer">“На любые цели”</p>
+              </div>
+              <img class="card__logo" src="img/card_logo3.png" alt="Совком Банк" width="120" height="90">
+            </div>
+            <div class="card__content">
+              <div class="card__info-item">
+                <p class="card__mark">Ставка от</p>
+                <p class="card__value">9.9%</p>
+              </div>
+              <div class="card__info-item">
+                <p class="card__mark">Срок кредита</p>
+                <p class="card__value">до 3 лет</p>
+              </div>
+              <div class="card__info-item card__info-item--big">
+                <p class="card__mark">Сумма кредита</p>
+                <p class="card__value">до 5 000 000 руб.</p>
+              </div>
+              <p class="card__feature">Особенность: 0% по кредиту</p>
+              <a class="card__button button button--white" href="#">Подробнее</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div id="best__debit-card" class="best__list">
+        <div class="best__item">
+          <div class="best__card">
+            <div class="card">
+            <div class="card__top">
+              <div class="card__name">
+                <h3 class="card__bank">МКБ</h3>
+                <p class="card__offer">“На любые цели”</p>
+              </div>
+              <img class="card__logo" src="img/card_logo1.png" alt="МКБ" width="120" height="90">
+            </div>
+            <div class="card__content">
+              <div class="card__info-item">
+                <p class="card__mark">Ставка от</p>
+                <p class="card__value">9.9%</p>
+              </div>
+              <div class="card__info-item">
+                <p class="card__mark">Срок кредита</p>
+                <p class="card__value">до 3 лет</p>
+              </div>
+              <div class="card__info-item card__info-item--big">
+                <p class="card__mark">Сумма кредита</p>
+                <p class="card__value">до 5 000 000 руб.</p>
+              </div>
+              <p class="card__feature">Особенность: на любые цели</p>
+              <a class="card__button button button--white" href="#">Подробнее</a>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="best__item">
+          <div class="best__card">
+            <div class="card">
+            <div class="card__top">
+              <div class="card__name">
+                <h3 class="card__bank">Восточный банк</h3>
+                <p class="card__offer">“На любые цели”</p>
+              </div>
+              <img class="card__logo" src="img/card_logo2.png" alt="Восточный банк" width="120" height="90">
+            </div>
+            <div class="card__content">
+              <div class="card__info-item">
+                <p class="card__mark">Ставка от</p>
+                <p class="card__value">9.9%</p>
+              </div>
+              <div class="card__info-item">
+                <p class="card__mark">Срок кредита</p>
+                <p class="card__value">до 3 лет</p>
+              </div>
+              <div class="card__info-item card__info-item--big">
+                <p class="card__mark">Сумма кредита</p>
+                <p class="card__value">до 5 000 000 руб.</p>
+              </div>
+              <p class="card__feature">Особенность: денги за 1 день</p>
+              <a class="card__button button button--white" href="#">Подробнее</a>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="best__item">
+          <div class="best__card">
+            <div class="card">
+            <div class="card__top">
+              <div class="card__name">
+                <h3 class="card__bank">Совком Банк</h3>
+                <p class="card__offer">“На любые цели”</p>
+              </div>
+              <img class="card__logo" src="img/card_logo3.png" alt="Совком Банк" width="120" height="90">
+            </div>
+            <div class="card__content">
+              <div class="card__info-item">
+                <p class="card__mark">Ставка от</p>
+                <p class="card__value">9.9%</p>
+              </div>
+              <div class="card__info-item">
+                <p class="card__mark">Срок кредита</p>
+                <p class="card__value">до 3 лет</p>
+              </div>
+              <div class="card__info-item card__info-item--big">
+                <p class="card__mark">Сумма кредита</p>
+                <p class="card__value">до 5 000 000 руб.</p>
+              </div>
+              <p class="card__feature">Особенность: 0% по кредиту</p>
+              <a class="card__button button button--white" href="#">Подробнее</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div id="best__mortgage" class="best__list">
+        <div class="best__item">
+          <div class="best__card">
+            <div class="card">
+            <div class="card__top">
+              <div class="card__name">
+                <h3 class="card__bank">МКБ</h3>
+                <p class="card__offer">“На любые цели”</p>
+              </div>
+              <img class="card__logo" src="img/card_logo1.png" alt="МКБ" width="120" height="90">
+            </div>
+            <div class="card__content">
+              <div class="card__info-item">
+                <p class="card__mark">Ставка от</p>
+                <p class="card__value">9.9%</p>
+              </div>
+              <div class="card__info-item">
+                <p class="card__mark">Срок кредита</p>
+                <p class="card__value">до 3 лет</p>
+              </div>
+              <div class="card__info-item card__info-item--big">
+                <p class="card__mark">Сумма кредита</p>
+                <p class="card__value">до 5 000 000 руб.</p>
+              </div>
+              <p class="card__feature">Особенность: на любые цели</p>
+              <a class="card__button button button--white" href="#">Подробнее</a>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="best__item">
+          <div class="best__card">
+            <div class="card">
+            <div class="card__top">
+              <div class="card__name">
+                <h3 class="card__bank">Восточный банк</h3>
+                <p class="card__offer">“На любые цели”</p>
+              </div>
+              <img class="card__logo" src="img/card_logo2.png" alt="Восточный банк" width="120" height="90">
+            </div>
+            <div class="card__content">
+              <div class="card__info-item">
+                <p class="card__mark">Ставка от</p>
+                <p class="card__value">9.9%</p>
+              </div>
+              <div class="card__info-item">
+                <p class="card__mark">Срок кредита</p>
+                <p class="card__value">до 3 лет</p>
+              </div>
+              <div class="card__info-item card__info-item--big">
+                <p class="card__mark">Сумма кредита</p>
+                <p class="card__value">до 5 000 000 руб.</p>
+              </div>
+              <p class="card__feature">Особенность: денги за 1 день</p>
+              <a class="card__button button button--white" href="#">Подробнее</a>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="best__item">
+          <div class="best__card">
+            <div class="card">
+            <div class="card__top">
+              <div class="card__name">
+                <h3 class="card__bank">Совком Банк</h3>
+                <p class="card__offer">“На любые цели”</p>
+              </div>
+              <img class="card__logo" src="img/card_logo3.png" alt="Совком Банк" width="120" height="90">
+            </div>
+            <div class="card__content">
+              <div class="card__info-item">
+                <p class="card__mark">Ставка от</p>
+                <p class="card__value">9.9%</p>
+              </div>
+              <div class="card__info-item">
+                <p class="card__mark">Срок кредита</p>
+                <p class="card__value">до 3 лет</p>
+              </div>
+              <div class="card__info-item card__info-item--big">
+                <p class="card__mark">Сумма кредита</p>
+                <p class="card__value">до 5 000 000 руб.</p>
+              </div>
+              <p class="card__feature">Особенность: 0% по кредиту</p>
+              <a class="card__button button button--white" href="#">Подробнее</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="calculator calculator--bottom">
+    <form class="calculator__form">
+
+      <div class="calculator__group">
+        <label class="calculator__label" for="credit-sum--footer">Выберите сумму кредита</label>
+          <div class="calculator__value">
+              <input type="number" class="calculator_value_sum" id="calculator_value_sum--footer" value="130000" max="5000000" min="5000" step="5000>
+              <label for="calculator_value_sum--footer" class="calculator__mark">руб.</label>
+          </div>
+          <div class="calculator__range" type="range" id="credit-sum--footer" name="credit-sum"></div>
+      </div>
+
+      <div class="calculator__group">
+        <label class="calculator__label" for="credit-time--footer">На какой срок</label>
+          <div class="calculator__value">
+              <input type="number" class="calculator_value_time" id="calculator_value_time--footer" value="12" max="60" min="1">
+              <label for="calculator_value_time--footer" class="calculator__mark">мес.</label>
+          </div>
+          <div class="calculator__range" type="range" id="credit-time--footer" name="credit-time"></div>
+      </div>
+
+      <p class="calculator__note">Годовая процентная ставка (APR) 360% - 720%</p>
+      <div class="calculator__button button__container">
+        <button class="button button--blue button--big">Подобрать</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">О проекте</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Контакты</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Правила и условия</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Карта сайта</a>
+          </li>
+        </ul>
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Политика конфидициальности</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">Согласие на обработку персональных данных</a>
+          </li>
+        </ul>
+        <div class="footer__right">
+          <p class="footer__address">
+            Наш адрес: 639544, г. Новосибирск, ул. Ленина, дом 2, 26 этаж
+          </p>
+          <p class="footer__warning">
+            Содержание сайта не является рекомендацией или офертой и носит информационно-справочный характер
+          </p>
+        </div>
+      </div>
+      <div class="footer__info">
+        <p class="footer__info-paragraph">
+          Последствия не выплаты кредитов - В случае невозвращения общей суммы кредита, кредитор вынуждено начислит штраф за просрочку кредита. Большинство кредиторов идут на уступки и дают дополнительные 3 рабочих дня для оплаты. Они предусмотрены специально для Вас на случай, к примеру, если банковский перевод занял больше времени, чем обычно, или Вы просто поздно отправили сумму. Однако, в случае неполучения от Вас какой-либо реакции в течение продолжительного времени, будет начислен штраф за просрочку срока погашения кредита размером в среднем 0,10% от первоначальной суммы кредита, данные о Вас могут быть переданы в реестр должников, а задолженность коллекторскому агентству для взыскания долга.
+          <br><br>
+          О всех приближающихся сроках платежа, кредитор своевременно информируем Вас по СМС и электронной рассылкой писем. Рекомендуем Вам вносить платеж в день получения данных напоминаний. Так, Вы сохраните репутацию добросовестного заемщика и сможете получить скидки при последующем обращении в организацию.
+        </p>
+        <p class="footer__info-paragraph">
+          Предложение не является оффертой. Конечные условия уточняйте при прямом общении с кредиторами. Процентная ставка по потребительским кредитам и кредитным картам - от 12,9 до 31% годовых. Например, если вы взяли кредит на сумму 100 000 рублей на 1 год, то после истечения срока кредита, вам необходимо будет выплатить: от 112 900 до 131 000 рублей. Расчёт сделан с учётом комиссии. Мы не выдаем кредиты на срок, менее 61 дня. Максимальный срок кредитования - 5 лет. credit-credit-credit.ru занимается консультационной деятельностью по подбору кредитных программ, не является кредитной организацией и самостоятельно не выдает кредиты.
+        </p>
+        <p class="footer__info-paragraph footer__info-copyright">
+          © 2005—2019 ООО «best credit»
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>
